@@ -1,0 +1,25 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "0.1.0",
+	"command": "python3",
+	"isShellCommand": false,
+	"showOutput": "always",
+	"tasks": [
+		{
+			"taskName": "run-app",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"isTestCommand": false,
+			"args": ["conway.py"]
+		},
+		{
+			"taskName": "run-tests",
+			"suppressTaskName": true,
+			"isBuildCommand": false,
+			"isTestCommand": true,
+			"args": ["-m","unittest"]
+		}
+	]
+	
+}
